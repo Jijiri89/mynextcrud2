@@ -14,3 +14,24 @@ model User {
   email String
   
 }
+model Country{
+  id Int @id @default(autoincrement())
+  name String
+  code String
+}
+model Product{
+  id Int @id @default(autoincrement())
+  name String
+  price Decimal @db.Decimal(10,2)
+  type String
+}
+model Post{
+  id Int @id @default(autoincrement())
+  name String
+  auther String
+}
+model Category{
+  id Int @id @default(autoincrement())
+  name String
+  color String 
+}
